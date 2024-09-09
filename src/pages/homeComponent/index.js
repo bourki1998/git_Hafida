@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { pageStyles } from "../../common/styles/pageStyles";
 import { useTranslation } from "react-multi-lang";
 import classNames from "classnames";
-import { ThemeProvider, createTheme } from "@mui/material/styles";
+
 const features = [
   {
     title: "Trouve ta correspondance",
@@ -40,12 +40,9 @@ const testimonials = [
 const HomePage = () => {
   const t = useTranslation();
   const classes = pageStyles();
-  //const theme = createTheme();
-
-
 
   return (
-    <div className={classNames(classes.hcpBackground, classes.screen)}>
+    <div className={classNames(classes.hcpBackground)}>
       <Header />
       <Container>
         <Box mt={5} textAlign="center">
