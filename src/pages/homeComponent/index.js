@@ -42,17 +42,7 @@ const HomePage = () => {
   const classes = pageStyles();
   //const theme = createTheme();
 
-  const name = "James";
 
-  const person = { first: name };
-
-  console.log(person);
-
-  const sayHelloLinting = (fName) => {
-    console.log(`Hello linting, ${fName}`);
-  };
-
-  sayHelloLinting("James");
 
   return (
     <div className={classNames(classes.hcpBackground, classes.screen)}>
