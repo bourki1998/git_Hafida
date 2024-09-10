@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import store from "./store";
 import Login from "./pages/loginComponent";
 import HomePage from "./pages/homeComponent";
+import DatingPreferences from "./pages/preferencesComponent";
 import an from "./translation/an.json";
 import fr from "./translation/fr.json";
 import ar from "./translation/ar.json";
@@ -31,6 +32,7 @@ root.render(
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/preferences" element={<DatingPreferences />} />
         </Routes>
       </BrowserRouter>
     </AppProvider>

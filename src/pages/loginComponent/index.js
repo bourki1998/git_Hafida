@@ -2,6 +2,9 @@ import React from "react";
 import { Field, reduxForm } from "redux-form";
 import { Button, TextField, Typography, Container, Box } from "@mui/material";
 import Header from "../../components/header/header";
+import { useNavigate } from "react-router-dom";
+import { pageStyles } from "../../common/styles/pageStyles";
+import classNames from "classnames";
 const validate = (values) => {
   const errors = {};
 
@@ -35,9 +38,11 @@ const renderTextField = ({
 
 function Login(props) {
   const { handleSubmit } = props;
-
+  const navigate = useNavigate();
+  const classes = pageStyles();
   const onSubmit = (formValues) => {
     console.log("Form Values:", formValues);
+    navigate("/preferences");
   };
 
   return (
