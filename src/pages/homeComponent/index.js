@@ -67,7 +67,7 @@ const HomePage = () => {
           <Typography variant="h6" component="p" gutterBottom>
             Rejoignez-nous et trouvez votre partenaire idéal dès aujourd'hui.
           </Typography>
-          <Link to="/login" className="mx-1">
+          <Link to="/Auth" className="mx-1">
             <Button
               variant="contained"
               size="large"

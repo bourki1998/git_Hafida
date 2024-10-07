@@ -99,6 +99,11 @@ const Header = () => {
               </MenuItem>
             ))}
           </Menu>
+          <Link to="/preferences" className="mx-1">
+            <Button color="inherit" style={{ color: "white" }}>
+              Préférences
+            </Button>
+          </Link>
           <Link to="/login" className="mx-1">
             <Button color="inherit" style={{ color: "white" }}>
               Se connecter

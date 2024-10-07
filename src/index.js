@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import store from "./store";
 import Login from "./pages/loginComponent";
 import HomePage from "./pages/homeComponent";
+import RegistrationPage from "./pages/AutheComponent";
 import DatingPreferences from "./pages/preferencesComponent";
 import an from "./translation/an.json";
 import fr from "./translation/fr.json";
@@ -33,6 +34,7 @@ root.render(
           <Route path="/" element={<HomePage />} />
           <Route path="/login" element={<Login />} />
           <Route path="/preferences" element={<DatingPreferences />} />
+          <Route path="/Auth" element={<RegistrationPage />} />
         </Routes>
       </BrowserRouter>
     </AppProvider>
